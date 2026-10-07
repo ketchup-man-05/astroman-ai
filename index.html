@@ -70,12 +70,7 @@
     background: #0d0906;
     color: #f5efe2;
     min-height: 100vh;
-    justify-content: flex-start;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow-x: hidden;
-    flex-direction: column;
   }
   .topbar {
     position: fixed; top: 0; left: 0; right: 0;
@@ -129,18 +124,18 @@
   }
   .hero {
     min-height: 100vh;
-    padding-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    text-align: center;
     width: 100%;
-  }
-  .content {
     position: relative;
     z-index: 3;
+  }
+  .content {
     text-align: center;
     padding: 40px 24px;
     max-width: 700px;
+    margin: 0 auto;
   }
   h1 {
     font-size: clamp(2.2rem, 6vw, 4rem);
@@ -210,6 +205,7 @@
 </head>
 <body>
 <div class="bg-fixed"></div>
+<canvas id="embers"></canvas>
 <header class="topbar">
   <div class="brand">Astroman AI</div>
   <nav class="toplinks">
@@ -219,16 +215,14 @@
   </nav>
   <div class="top-right">
     <a href="https://astroman-ai.streamlit.app/" class="top-login" target="_blank" rel="noopener">Login</a>
-    <a href="https://astroman-ai.streamlit.app/" class="top-cta" target="_blank" rel="noopener">Ask free</a>
+    <a href="https://astroman-ai.streamlit.app/Astroman_AI" class="top-cta" target="_blank" rel="noopener">Ask free</a>
   </div>
 </header>
 <section class="hero">
-<div class="vignette"></div>
-<canvas id="embers"></canvas>
 <div class="content">
   <h1>Ask your question.<br><span class="gold">Get your answer.</span></h1>
-  <p class="sub">Ask what's on your mind. Get a clear yes or no &mdash; and when.</p>
-  <a href="https://astroman-ai.streamlit.app/" class="cta" target="_blank" rel="noopener">Ask free &mdash; 2 questions</a>
+  <p class="sub">Ask what&apos;s on your mind. Get a clear yes or no &mdash; and when.</p>
+  <a href="https://astroman-ai.streamlit.app/Astroman_AI" class="cta" target="_blank" rel="noopener">Ask free &mdash; 2 questions</a>
   <p class="read-first">Read below before you ask &darr;</p>
   <div class="pills">
     <span class="pill">Career</span>
@@ -547,7 +541,7 @@
 <section class="final">
   <h2>Your question is waiting.</h2>
   <p class="final-sub">Your first 2 questions are free.</p>
-  <a href="https://astroman-ai.streamlit.app/" class="cta" target="_blank" rel="noopener">Ask free &mdash; 2 questions</a>
+  <a href="https://astroman-ai.streamlit.app/Astroman_AI" class="cta" target="_blank" rel="noopener">Ask free &mdash; 2 questions</a>
 </section>
 <footer class="foot">
   <p>&copy; 2026 Astroman AI</p>
